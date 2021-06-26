@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+      body {
+        background-color: hsl(233, 47%, 7%);
+      }
+      main {
+        background-color: hsl(244, 38%, 16%);
+        width: calc(100vw - 80px);
+        margin: 0 auto;
+      }
+      main h1 {
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 32px;
+      }
+      main h1 > span {
+        color: #ab5cdb;
+      }
+
+      .list-none {
+        font-family: 'Inter', sans-serif;
+      }
+      .list-none li {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .list-none span {
+        color: #7a7a7a;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      article p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        color: #7a7a7a;
+        text-align: center;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="my-16 rounded-xl flex flex-col lg:flex-row-reverse">
+      <div class="hero-container w-full max-w-s lg:w-2/4">
+        <picture>
+          <source
+            media="(min-width:1024px)"
+            srcset="./images/image-header-desktop.jpg"
+          />
+
+          <img
+            class="w-full rounded-t-xl lg:rounded-tl-none lg:rounded-r-xl"
+            src="./images/image-header-mobile.jpg"
+            alt="hero"
+          />
+        </picture>
+      </div>
+
+      <section class="py-8 px-4 w-full lg:w-2/4 lg:my-auto">
+        <div>
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+
+          <article class="pt-5">
+            <p>
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </article>
+        </div>
+
+        <div>
+          <ul
+            class="list-none flex flex-col lg:flex-row lg:justify-center pt-8"
+          >
+            <li class="flex flex-col items-center lg:items-start pb-5 lg:px-4">
+              10k+
+              <span> companies </span>
+            </li>
+            <li class="flex flex-col items-center lg:items-start pb-5 lg:px-4">
+              314
+              <span> templates </span>
+            </li>
+            <li class="flex flex-col items-center lg:items-start pb-5 lg:px-4">
+              12m+
+              <span> queries </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution text-gray-400 text-center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Syed Shoaib Ali</a>.
+    </div>
+  </body>
+</html>
